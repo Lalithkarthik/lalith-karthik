@@ -190,7 +190,7 @@ export default function Home() {
         <div className="hero-layout">
           {/* Left */}
           <div className="hero-content">
-            <p className="hero-label">// Applied ML · AI Systems · Builder</p>
+            <p className="hero-label"></p>
             <h1 className="hero-name">
               <span className="first">L Sree Lalith</span>
               <span className="last">Karthik</span>
