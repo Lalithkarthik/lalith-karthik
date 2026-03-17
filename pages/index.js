@@ -15,7 +15,7 @@ const SKILLS = [
   {
     icon: '⌨️',
     title: 'Programming',
-    tags: ['Python', 'C', 'C++', 'Java', 'SQL', 'R', 'MATLAB'],
+    tags: ['Python', 'C', 'C++', 'Java', 'SQL', 'R'],
   },
   {
     icon: '🧠',
@@ -190,7 +190,7 @@ export default function Home() {
         <div className="hero-layout">
           {/* Left */}
           <div className="hero-content">
-            <p className="hero-label"></p>
+            <p className="hero-label">// Applied ML · AI Systems · Builder</p>
             <h1 className="hero-name">
               <span className="first">L Sree Lalith</span>
               <span className="last">Karthik</span>
@@ -200,7 +200,7 @@ export default function Home() {
               <span className="cursor-blink">_</span>
             </p>
             <p className="hero-desc">
-              CS and AI/ML undergrad at <strong>IIIT Raichur</strong> &amp; <strong>IIT Guwahati</strong> designing
+              CS undergrad at <strong>IIIT Raichur</strong> &amp; <strong>IIT Guwahati</strong> designing
               end-to-end ML systems, improving model performance, and deploying scalable AI solutions that move the needle.
             </p>
             <div className="hero-actions">
@@ -266,9 +266,9 @@ export default function Home() {
             <div className="about-stats">
               {[
                 { num: '9.12', label: 'B.Tech CGPA' },
-                { num: '8.99', label: 'B.Sc. CGPA' },
+                { num: '9.03', label: 'B.S. CGPA' },
                 { num: '2+', label: 'Internships' },
-                { num: 'One of 5k', label: 'RF Scholars 2023' },
+                { num: '5k', label: 'RF Scholars' },
               ].map(s => (
                 <div className="stat-card reveal" key={s.label}>
                   <div className="stat-num">{s.num}</div>
@@ -282,7 +282,7 @@ export default function Home() {
               { key: 'Name', val: 'L Sree Lalith Karthik' },
               { key: 'Phone', val: '+91 70933 46348' },
               { key: 'Email', val: 'lalithkarthik.lslk@gmail.com', link: 'mailto:lalithkarthik.lslk@gmail.com' },
-              { key: 'LinkedIn', val: 'lalith-karthik', link: 'https://www.linkedin.com/in/lalith-karthik-535251322/' },
+              { key: 'LinkedIn', val: 'lalith-karthik', link: 'https://linkedin.com/in/lalith-karthik' },
               { key: 'GitHub', val: 'Lalithkarthik', link: 'https://github.com/Lalithkarthik' },
               { key: 'Location', val: 'Raichur, Karnataka, India' },
               { key: 'Status', val: '🟢 Open to Opportunities' },
@@ -429,7 +429,7 @@ export default function Home() {
             <p className="edu-location">Guwahati, Assam</p>
             <div className="edu-meta">
               <span className="edu-badge">Sept 2023 – May 2027</span>
-              <span className="edu-cgpa">CGPA: 8.99 / 10</span>
+              <span className="edu-cgpa">CGPA: 9.03 / 10</span>
             </div>
           </div>
         </div>
@@ -467,7 +467,7 @@ export default function Home() {
                 {[
                   { icon: '✉️', label: 'Email', value: 'lalithkarthik.lslk@gmail.com', href: 'mailto:lalithkarthik.lslk@gmail.com' },
                   { icon: '📞', label: 'Phone', value: '+91 70933 46348', href: 'tel:+917093346348' },
-                  { icon: '💼', label: 'LinkedIn', value: 'linkedin.com/in/lalith-karthik', href: 'https://www.linkedin.com/in/lalith-karthik-535251322/' },
+                  { icon: '💼', label: 'LinkedIn', value: 'linkedin.com/in/lalith-karthik', href: 'https://linkedin.com/in/lalith-karthik' },
                   { icon: '🐙', label: 'GitHub', value: 'github.com/Lalithkarthik', href: 'https://github.com/Lalithkarthik' },
                 ].map(c => (
                   <a href={c.href} target="_blank" rel="noreferrer" className="contact-link reveal" key={c.label}>
@@ -504,7 +504,7 @@ export default function Home() {
         <div className="footer-right">
           <a href="https://github.com/Lalithkarthik" target="_blank" rel="noreferrer">GitHub</a>
           {' · '}
-          <a href="https://www.linkedin.com/in/lalith-karthik-535251322/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://linkedin.com/in/lalith-karthik" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </footer>
     </>
