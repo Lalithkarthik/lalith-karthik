@@ -142,7 +142,8 @@ export default function Home() {
         <title>L Sree Lalith Karthik — ML Engineer & AI Systems Designer</title>
         <meta name="description" content="Portfolio of L Sree Lalith Karthik — Applied ML Engineer, AI Systems Designer, and CS undergrad at IIIT Raichur & IIT Guwahati." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/favicon.jpg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </Head>
