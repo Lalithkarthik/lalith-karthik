@@ -5,36 +5,53 @@ const ROLES = [
   'Applied ML Engineer',
   'AI Systems Designer',
   'Team Lead & Builder',
+  '',
   'Computer Science Undergrad',
 ]
 
 // ─────────────────────────────────────────────
-//  SKILLS — add or remove categories/tags here
+//  SKILLS - add or remove categories/tags here
 // ─────────────────────────────────────────────
 const SKILLS = [
   {
     icon: '⌨️',
-    title: 'Programming',
-    tags: ['Python', 'C', 'C++', 'Java', 'SQL', 'R'],
-  },
-  {
-    icon: '🧠',
-    title: 'Machine Learning',
-    tags: [
-      'PyTorch', 'TensorFlow', 'Scikit-learn',
-      'GNNs', 'Reinforcement Learning', 'FAISS',
-      'Feature Engineering', 'Model Evaluation', 'Optimization',
+    title: 'Programming languages and other tools',
+    tags: ['Python', 'C', 'C++', 'Java', 'SQL', 'R', 'MATLAB', 'MongoDB', 'MySQL', 
+      'Linux', 'Git / GitHub', 'Postman', 
+      'CI/CD', 'FastAPI', 'Flask', 'React.js', 'Express.js', 'REST APIs'
     ],
   },
   {
-    icon: '⚡',
-    title: 'Backend & APIs',
-    tags: ['FastAPI', 'Flask', 'React.js', 'Express.js', 'REST APIs'],
+    icon: '💻',
+    title: 'Software Engineering',
+    tags: [
+      'DSA', 'Object-Oriented Design',
+      'System Design',
+      'Backend Development',
+      'Linux & Shell Scripting',
+      'Optimization',
+      'Modular & Scalable Architecture',
+      'Debugging', 'Profiling',
+      'Testing',
+    ],
   },
   {
-    icon: '🗄️',
-    title: 'Databases & Tools',
-    tags: ['MongoDB', 'MySQL', 'Linux', 'Git / GitHub', 'Postman', 'CI/CD'],
+    icon: '🧠',
+    title: 'Artificial Intelligence & Data Science',
+    tags: [
+      'ML',
+      'DL',
+      'GNNs',
+      'RL',
+      'Model Evaluation & Validation',
+      'Feature Engineering',
+      'Imbalanced Data Handling',
+      'PyTorch',
+      'TensorFlow',
+      'Scikit-learn',
+      'Data Preprocessing Pipelines',
+      'Explainable and Ethical AI'
+    ],
   },
 ]
 // ─────────────────────────────────────────────
@@ -49,7 +66,7 @@ export default function Home() {
   const cursorDot = useRef(null)
   const cursorRing = useRef(null)
 
-  // Theme — default light
+  // Theme - default light
   useEffect(() => {
     const saved = localStorage.getItem('theme')
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -139,8 +156,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>L Sree Lalith Karthik — ML Engineer & AI Systems Designer</title>
-        <meta name="description" content="Portfolio of L Sree Lalith Karthik — Applied ML Engineer, AI Systems Designer, and CS undergrad at IIIT Raichur & IIT Guwahati." />
+        <title>L Sree Lalith Karthik - ML Engineer & AI Systems Designer</title>
+        <meta name="description" content="Portfolio of L Sree Lalith Karthik - Applied ML Engineer, AI Systems Designer, and CS undergrad at IIIT Raichur & IIT Guwahati." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
@@ -163,7 +180,7 @@ export default function Home() {
           <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
             <span className="theme-icon">{darkMode ? '☀︎' : '◑'}</span>
           </button>
-          <a href="mailto:lalithkarthik.lslk@gmail.com" className="nav-cta">Hire Me</a>
+          <a href="mailto:lalithkarthik.lslk@gmail.com" className="nav-cta">Contact Me</a>
         </div>
         <div className="hamburger" onClick={() => setMobileOpen(!mobileOpen)}>
           <span /><span /><span />
@@ -191,7 +208,7 @@ export default function Home() {
         <div className="hero-layout">
           {/* Left */}
           <div className="hero-content">
-            <p className="hero-label">// Applied ML · AI Systems · Builder</p>
+            <p className="hero-label">// Applied ML · AI Systems · Optimising frameworks</p>
             <h1 className="hero-name">
               <span className="first">L Sree Lalith</span>
               <span className="last">Karthik</span>
@@ -201,7 +218,7 @@ export default function Home() {
               <span className="cursor-blink">_</span>
             </p>
             <p className="hero-desc">
-              CS undergrad at <strong>IIIT Raichur</strong> &amp; <strong>IIT Guwahati</strong> designing
+              CS and AI undergrad at <strong>IIIT Raichur</strong> &amp; <strong>IIT Guwahati</strong> designing
               end-to-end ML systems, improving model performance, and deploying scalable AI solutions that move the needle.
             </p>
             <div className="hero-actions">
@@ -213,7 +230,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right — floating JSON card */}
+          {/* Right - floating JSON card */}
           <div className="hero-card">
             <div className="hero-card-header">
               <div className="hero-card-dots">
@@ -228,8 +245,8 @@ export default function Home() {
               <p className="jl i1"><span className="jk">"name"</span><span className="jc">: </span><span className="js">"L Sree Lalith Karthik"</span><span className="jp">,</span></p>
               <p className="jl i1"><span className="jk">"role"</span><span className="jc">: </span><span className="js">"Applied ML Engineer"</span><span className="jp">,</span></p>
               <p className="jl i1"><span className="jk">"degrees"</span><span className="jc">: </span><span className="jbr">[</span></p>
-              <p className="jl i2"><span className="js">"B.Tech CSE — IIIT Raichur"</span><span className="jp">,</span></p>
-              <p className="jl i2"><span className="js">"B.S. AI &amp; DS — IIT Guwahati"</span></p>
+              <p className="jl i2"><span className="js">"B.Tech CSE - IIIT Raichur"</span><span className="jp">,</span></p>
+              <p className="jl i2"><span className="js">"B.S. AI &amp; DS - IIT Guwahati"</span></p>
               <p className="jl i1"><span className="jbr">]</span><span className="jp">,</span></p>
               <p className="jl i1"><span className="jk">"cgpa"</span><span className="jc">: </span><span className="jn">9.12</span><span className="jp">,</span></p>
               <p className="jl i1"><span className="jk">"status"</span><span className="jc">: </span><span className="js jgreen">"open_to_work"</span><span className="jp">,</span></p>
@@ -248,26 +265,26 @@ export default function Home() {
 
       {/* ─── ABOUT ─── */}
       <section id="about">
-        <p className="section-tag reveal">01 — About</p>
+        <p className="section-tag reveal">01 - About</p>
         <h2 className="section-title reveal">Turning <em>data</em> into<br />real-world impact.</h2>
         <div className="section-line reveal" />
         <div className="about-grid">
           <div>
             <div className="about-text">
               <p className="reveal">
-                I'm an <strong>Applied ML-focused Computer Science undergraduate</strong> with a dual degree — B.Tech in CSE from IIIT Raichur and a B.S. in AI & Data Science from IIT Guwahati (Online).
+                I'm an <strong>Applied ML-focused Computer Science undergraduate</strong> with a dual degree - B.Tech in CSE from IIIT Raichur and a B.S. in AI & Data Science from IIT Guwahati (Online).
               </p>
               <p className="reveal">
                 My work spans the full ML pipeline: from <strong>data preprocessing and feature engineering</strong> to model training, evaluation, and production deployment. I've led cross-functional teams and delivered measurable gains in accuracy, inference efficiency, and workflow automation.
               </p>
               <p className="reveal">
-                Beyond the code, I'm the <strong>CodeSoc Coordinator</strong> at IIIT Raichur and a proud <strong>Reliance Foundation Scholar 2023</strong> — one of just 5000 selected nationwide.
+                Beyond the code, I'm the <strong>CodeSoc Coordinator</strong>, the coding club of IIIT Raichur and a proud <strong>Reliance Foundation Scholar 2023</strong> - one of just 5000 selected nationwide.
               </p>
             </div>
             <div className="about-stats">
               {[
-                { num: '9.12', label: 'B.Tech CGPA' },
-                { num: '9.03', label: 'B.S. CGPA' },
+                { num: '9.2', label: 'B.Tech CGPA' },
+                { num: '8.99', label: 'B.S. CGPA' },
                 { num: '2+', label: 'Internships' },
                 { num: '5k', label: 'RF Scholars' },
               ].map(s => (
@@ -283,7 +300,7 @@ export default function Home() {
               { key: 'Name', val: 'L Sree Lalith Karthik' },
               { key: 'Phone', val: '+91 70933 46348' },
               { key: 'Email', val: 'lalithkarthik.lslk@gmail.com', link: 'mailto:lalithkarthik.lslk@gmail.com' },
-              { key: 'LinkedIn', val: 'lalith-karthik', link: 'https://linkedin.com/in/lalith-karthik' },
+              { key: 'LinkedIn', val: 'lalith-karthik', link: 'https://www.linkedin.com/in/lalith-karthik-535251322/' },
               { key: 'GitHub', val: 'Lalithkarthik', link: 'https://github.com/Lalithkarthik' },
               { key: 'Location', val: 'Raichur, Karnataka, India' },
               { key: 'Status', val: '🟢 Open to Opportunities' },
@@ -302,7 +319,7 @@ export default function Home() {
       {/* ─── SKILLS ─── */}
       <section id="skills" className="alt-section">
         <div className="inner">
-          <p className="section-tag reveal">02 — Skills</p>
+          <p className="section-tag reveal">02 - Skills</p>
           <h2 className="section-title reveal">Tools of the <em>trade</em>.</h2>
           <div className="section-line reveal" />
           <div className="skills-grid">
@@ -323,7 +340,7 @@ export default function Home() {
 
       {/* ─── EXPERIENCE ─── */}
       <section id="experience">
-        <p className="section-tag reveal">03 — Experience</p>
+        <p className="section-tag reveal">03 - Experience</p>
         <h2 className="section-title reveal">Where I've <em>built</em>.</h2>
         <div className="section-line reveal" />
         <div className="timeline">
@@ -331,13 +348,13 @@ export default function Home() {
             <div className="timeline-dot" />
             <div className="timeline-meta">
               <span className="timeline-company">Long Term Industrial Development Co.</span>
-              <span className="timeline-date">Dec 2025 — Present</span>
+              <span className="timeline-date">Dec 2025 - Present</span>
               <span className="timeline-badge">Active</span>
             </div>
-            <h3 className="timeline-role">AI/ML Intern — Team Lead</h3>
+            <h3 className="timeline-role">AI/ML Intern - Team Lead</h3>
             <ul className="timeline-bullets">
-              <li>Led a <strong>5-member team</strong> building a production-oriented ML pipeline covering preprocessing, feature engineering, model training, evaluation, and deployment.</li>
-              <li>Improved model accuracy from <strong>68% → 82%</strong> through dataset restructuring, feature refinement, and comparative experimentation across multiple algorithms.</li>
+              <li>Led a <strong>4-member team</strong> building a production-oriented ML pipeline covering preprocessing, feature engineering, model training, evaluation, and deployment.</li>
+              <li>Improved model accuracy from <strong>68% → 89%</strong> and other metrics through dataset restructuring, feature refinement, and comparative experimentation across multiple algorithms.</li>
               <li>Developed a <strong>Tkinter-based GUI</strong> integrated with SQL-backed data retrieval, reducing manual workflow steps and improving system usability.</li>
             </ul>
           </div>
@@ -345,7 +362,7 @@ export default function Home() {
             <div className="timeline-dot" />
             <div className="timeline-meta">
               <span className="timeline-company">Bosch Global Software Technologies</span>
-              <span className="timeline-date">May 2024 — Nov 2024</span>
+              <span className="timeline-date">May 2024 - Nov 2024</span>
               <span className="timeline-badge">Completed</span>
             </div>
             <h3 className="timeline-role">Industry Immersion Research Student</h3>
@@ -361,7 +378,7 @@ export default function Home() {
       {/* ─── PROJECTS ─── */}
       <section id="projects" className="alt-section">
         <div className="inner">
-          <p className="section-tag reveal">04 — Projects</p>
+          <p className="section-tag reveal">04 - Projects</p>
           <h2 className="section-title reveal">Things I've <em>shipped</em>.</h2>
           <div className="section-line reveal" />
           <div className="projects-grid">
@@ -381,7 +398,7 @@ export default function Home() {
                   <span className="stack-tag" key={t}>{t}</span>
                 ))}
               </div>
-              <a href="https://github.com/Lalithkarthik" target="_blank" rel="noreferrer" className="project-link">View on GitHub →</a>
+              <a href="https://github.com/Lalithkarthik/General-Local-Agent" target="_blank" rel="noreferrer" className="project-link">View on GitHub →</a>
             </div>
             <div className="project-card">
               <div className="project-num">02</div>
@@ -399,7 +416,98 @@ export default function Home() {
                   <span className="stack-tag" key={t}>{t}</span>
                 ))}
               </div>
-              <a href="https://github.com/Lalithkarthik" target="_blank" rel="noreferrer" className="project-link">View on GitHub →</a>
+              <a href="https://github.com/Lalithkarthik/hybrid-gnn-power-grid-optimization" target="_blank" rel="noreferrer" className="project-link">View on GitHub →</a>
+            </div>
+            <div className="project-card">
+              <div className="project-num">03</div>
+              <h3 className="project-title">The Pitch Visualiser</h3>
+              <p className="project-desc">
+                An AI-powered system that converts narrative startup pitches into structured visual storyboards using LLM-driven scene extraction and prompt engineering. Automates transformation from text → semantic scenes → image prompts → visual output.
+              </p>
+              <div className="project-highlights">
+                <span className="project-highlight">Automated narrative-to-visual pipeline with multi-stage prompt engineering</span>
+                <span className="project-highlight">Improved semantic scene extraction consistency across varied pitch styles</span>
+                <span className="project-highlight">Reduced manual storyboard creation effort significantly</span>
+              </div>
+              <div className="project-stack">
+                {['Python', 'LLMs', 'Prompt Engineering', 'Image Generation APIs'].map(t => (
+                  <span className="stack-tag" key={t}>{t}</span>
+                ))}
+              </div>
+              <a href="https://github.com/Lalithkarthik/the-pitch-visualiser" target="_blank" rel="noreferrer" className="project-link">View on GitHub →</a>
+            </div>
+            <div className="project-card">
+              <div className="project-num">04</div>
+              <h3 className="project-title">Vehicle Troubleshoot Chatbot</h3>
+              <p className="project-desc">
+                An intelligent diagnostic chatbot that assists users in identifying vehicle issues through structured query flows and domain-specific reasoning. Designed for real-time interaction with guided troubleshooting logic.
+              </p>
+              <div className="project-highlights">
+                <span className="project-highlight">Built rule-guided conversational flow for structured fault diagnosis</span>
+                <span className="project-highlight">Improved user query resolution efficiency via guided interaction</span>
+                <span className="project-highlight">Designed domain-aware decision pathways for automotive troubleshooting</span>
+              </div>
+              <div className="project-stack">
+                {['Python', 'NLP', 'Chatbot Design', 'Flask'].map(t => (
+                  <span className="stack-tag" key={t}>{t}</span>
+                ))}
+              </div>
+              <a href="https://github.com/Lalithkarthik/Vehicle_troubleshoot_chatbot_iiitr" target="_blank" rel="noreferrer" className="project-link">View on GitHub →</a>
+            </div>
+            <div className="project-card">
+              <div className="project-num">05</div>
+              <h3 className="project-title">Class Imbalance Handling in Medical Imaging</h3>
+              <p className="project-desc">
+                A comparative ML pipeline addressing severe class imbalance in breast ultrasound image classification using data-level and algorithm-level techniques, with detailed evaluation across multiple metrics.
+              </p>
+              <div className="project-highlights">
+                <span className="project-highlight">Implemented SMOTE, class weighting, and augmentation strategies</span>
+                <span className="project-highlight">Evaluated models using precision, recall, F1 under imbalance constraints</span>
+                <span className="project-highlight">Analyzed trade-offs between sensitivity and overall accuracy</span>
+              </div>
+              <div className="project-stack">
+                {['Python', 'Scikit-learn', 'Data Imbalance Techniques', 'Model Evaluation'].map(t => (
+                  <span className="stack-tag" key={t}>{t}</span>
+                ))}
+              </div>
+              <a href="https://github.com/Lalithkarthik/Class_imbalance_handling_BUSI" target="_blank" rel="noreferrer" className="project-link">View on GitHub →</a>
+            </div>
+
+            <div className="project-card">
+              <div className="project-num">06</div>
+                <h3 className="project-title">Flask API-Based Web Application</h3>
+                <p className="project-desc">
+                  A backend-driven web application exposing RESTful APIs using Flask, enabling dynamic data handling and client-server interaction.
+                </p>
+                <div className="project-highlights">
+                  <span className="project-highlight">Designed RESTful endpoints for structured data exchange</span>
+                  <span className="project-highlight">Handled backend logic and routing efficiently</span>
+                  <span className="project-highlight">Enabled scalable API-driven architecture</span>
+                </div>
+                <div className="project-stack">
+                  {['Python', 'Flask', 'REST APIs', 'Backend Development'].map(t => (
+                    <span className="stack-tag" key={t}>{t}</span>
+                  ))}
+                </div>
+                <a href="https://github.com/Lalithkarthik/Flask-API-Website" target="_blank" rel="noreferrer" className="project-link">View on GitHub →</a>
+            </div>
+            <div className="project-card">
+              <div className="project-num">07</div>
+              <h3 className="project-title">LLM-Based Quiz Generation Platform</h3>
+              <p className="project-desc">
+                A web-based platform that generates quizzes dynamically using large language models, enabling automated question generation and evaluation workflows.
+              </p>
+              <div className="project-highlights">
+                <span className="project-highlight">Integrated LLMs for dynamic question generation</span>
+                <span className="project-highlight">Reduced manual quiz creation effort significantly</span>
+                <span className="project-highlight">Built interactive pipeline for content generation and delivery</span>
+              </div>
+              <div className="project-stack">
+                {['Python', 'LLMs', 'Flask', 'Frontend Integration'].map(t => (
+                  <span className="stack-tag" key={t}>{t}</span>
+                ))}
+              </div>
+              <a href="https://github.com/Lalithkarthik/LLM-Quiz-website" target="_blank" rel="noreferrer" className="project-link">View on GitHub →</a>
             </div>
           </div>
         </div>
@@ -407,7 +515,7 @@ export default function Home() {
 
       {/* ─── EDUCATION ─── */}
       <section id="education">
-        <p className="section-tag reveal">05 — Education</p>
+        <p className="section-tag reveal">05 - Education</p>
         <h2 className="section-title reveal">Where I've <em>learned</em>.</h2>
         <div className="section-line reveal" />
         <div className="edu-grid">
@@ -419,7 +527,7 @@ export default function Home() {
             <p className="edu-location">Raichur, Karnataka</p>
             <div className="edu-meta">
               <span className="edu-badge">Aug 2023 – May 2027</span>
-              <span className="edu-cgpa">CGPA: 9.12 / 10</span>
+              <span className="edu-cgpa">CGPA: 9.2 / 10</span>
             </div>
           </div>
           <div className="edu-card">
@@ -430,7 +538,7 @@ export default function Home() {
             <p className="edu-location">Guwahati, Assam</p>
             <div className="edu-meta">
               <span className="edu-badge">Sept 2023 – May 2027</span>
-              <span className="edu-cgpa">CGPA: 9.03 / 10</span>
+              <span className="edu-cgpa">CGPA: 8.99 / 10</span>
             </div>
           </div>
         </div>
@@ -456,19 +564,19 @@ export default function Home() {
       {/* ─── CONTACT ─── */}
       <section id="contact" className="alt-section">
         <div className="inner">
-          <p className="section-tag reveal">06 — Contact</p>
+          <p className="section-tag reveal">06 - Contact</p>
           <h2 className="section-title reveal">Let's <em>connect</em>.</h2>
           <div className="section-line reveal" />
           <div className="contact-layout">
             <div>
               <p className="contact-text reveal">
-                I'm actively looking for exciting ML and AI engineering opportunities — internships, research collaborations, or full-time roles. If you have an interesting problem to solve, let's talk.
+                I'm actively looking for exciting ML and AI engineering opportunities - internships, research collaborations, or full-time roles. If you have an interesting problem to solve, let's talk.
               </p>
               <div className="contact-links">
                 {[
                   { icon: '✉️', label: 'Email', value: 'lalithkarthik.lslk@gmail.com', href: 'mailto:lalithkarthik.lslk@gmail.com' },
                   { icon: '📞', label: 'Phone', value: '+91 70933 46348', href: 'tel:+917093346348' },
-                  { icon: '💼', label: 'LinkedIn', value: 'linkedin.com/in/lalith-karthik', href: 'https://linkedin.com/in/lalith-karthik' },
+                  { icon: '💼', label: 'LinkedIn', value: 'linkedin.com/in/lalith-karthik', href: 'https://www.linkedin.com/in/lalith-karthik-535251322/' },
                   { icon: '🐙', label: 'GitHub', value: 'github.com/Lalithkarthik', href: 'https://github.com/Lalithkarthik' },
                 ].map(c => (
                   <a href={c.href} target="_blank" rel="noreferrer" className="contact-link reveal" key={c.label}>
@@ -484,9 +592,9 @@ export default function Home() {
             </div>
             <div className="contact-cta reveal">
               <p className="contact-cta-label">// Currently open to</p>
-              <h3 className="contact-cta-title">ML Engineering Roles &amp; Research Collaborations</h3>
+              <h3 className="contact-cta-title">AI/ML Engineering and Data Science Roles &amp; Research Collaborations</h3>
               <p className="contact-cta-text">
-                Whether it's building production ML pipelines, designing AI systems, or exploring novel research directions — I'm all ears. Dual degrees, strong academics, proven industry experience.
+                Whether it's building production ML pipelines, designing AI systems, or exploring novel research directions - I'm all ears. Dual degrees, strong academics, proven industry experience.
               </p>
               <a href="mailto:lalithkarthik.lslk@gmail.com" className="btn-primary">
                 <span>Send a Message</span>
@@ -500,12 +608,12 @@ export default function Home() {
       {/* ─── FOOTER ─── */}
       <footer>
         <div className="footer-left">
-          © {new Date().getFullYear()} L Sree Lalith Karthik — Designed &amp; Built with precision.
+          © {new Date().getFullYear()} L Sree Lalith Karthik - Designed &amp; Built with precision.
         </div>
         <div className="footer-right">
           <a href="https://github.com/Lalithkarthik" target="_blank" rel="noreferrer">GitHub</a>
           {' · '}
-          <a href="https://linkedin.com/in/lalith-karthik" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/lalith-karthik-535251322/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </footer>
     </>
