@@ -248,7 +248,7 @@ export default function Home() {
               <p className="jl i2"><span className="js">"B.Tech CSE - IIIT Raichur"</span><span className="jp">,</span></p>
               <p className="jl i2"><span className="js">"B.S. AI &amp; DS - IIT Guwahati"</span></p>
               <p className="jl i1"><span className="jbr">]</span><span className="jp">,</span></p>
-              <p className="jl i1"><span className="jk">"cgpa"</span><span className="jc">: </span><span className="jn">9.12</span><span className="jp">,</span></p>
+              <p className="jl i1"><span className="jk">"cgpa"</span><span className="jc">: </span><span className="jn">9.2, 8.99</span><span className="jp">,</span></p>
               <p className="jl i1"><span className="jk">"status"</span><span className="jc">: </span><span className="js jgreen">"open_to_work"</span><span className="jp">,</span></p>
               <p className="jl i1"><span className="jk">"stack"</span><span className="jc">: </span><span className="jbr">[</span><span className="js">"PyTorch"</span><span className="jp">, </span><span className="js">"LangChain"</span><span className="jp">, </span><span className="js">"FastAPI"</span><span className="jbr">]</span><span className="jp">,</span></p>
               <p className="jl i1"><span className="jk">"scholar"</span><span className="jc">: </span><span className="js">"Reliance Foundation 2023"</span></p>
